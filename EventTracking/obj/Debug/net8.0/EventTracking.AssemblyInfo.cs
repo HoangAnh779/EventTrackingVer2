@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventTracking")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a1bab8e84d673510041643eb5da9b345cd6d870")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventTracking")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventTracking")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
