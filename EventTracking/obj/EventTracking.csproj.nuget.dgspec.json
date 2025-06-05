@@ -54,10 +54,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "DevExpress.Blazor": {
-              "target": "Package",
-              "version": "[24.2.7, )"
-            },
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[8.0.16, )"

@@ -208,10 +208,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Intern/EventTrackingVer2/EventTracking/Components/Views/AccountManagement.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xWaWV3c1xBY2NvdW50TWFuYWdlbWVudC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/Intern/EventTrackingVer2/EventTracking/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

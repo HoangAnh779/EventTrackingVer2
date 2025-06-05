@@ -20,8 +20,6 @@ builder.Services.AddScoped<IEmailSender<ApplicationUser>, IdentityNoOpEmailSende
 // Use for admin pages 
 builder.Services.AddAuthorization();
 
-builder.Services.AddDevExpressBlazor();
-
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
