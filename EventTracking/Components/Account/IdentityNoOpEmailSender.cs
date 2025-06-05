@@ -10,8 +10,8 @@ namespace EventTracking.Components.Account
     internal sealed class IdentityNoOpEmailSender : IEmailSender<ApplicationUser>
     {
         // Gán trực tiếp email và mật khẩu ứng dụng ở đây
-        private readonly string fromEmail = "hoanganh.itdev@gmail.com";
-        private readonly string appPassword = "vsvc uotl hzkp jeum";
+        private readonly string fromEmail = "event.tracking2025@gmail.com";
+        private readonly string appPassword = "nmqu kwtc ynor vfvy";
 
         private async Task SendAsync(string toEmail, string subject, string htmlMessage)
         {

@@ -60,7 +60,7 @@
 		border-color: #0a58ca
 	}
 
-.register-container {
+.edit-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,7 +69,7 @@
 	padding: 20px;
 }
 
-.register-box {
+.edit-box {
 	background: white;
 	padding: 2rem;
 	border-radius: 17px;
@@ -78,12 +78,12 @@
 	max-width: 900px;
 }
 
-	.register-box h1 {
+	.edit-box h1 {
 		text-align: center;
 		font-weight: bold;
 		color: #333;
 	}
-	.register-box label {
+	.edit-box label {
 		left:8px;
 	}
 
@@ -173,3 +173,8 @@
 		color: #000;
 		border-radius: 4px;
 	}
+
+.form-floating > .form-select {
+	padding-top: 1rem !important;
+	padding-bottom: .625rem !important;
+}

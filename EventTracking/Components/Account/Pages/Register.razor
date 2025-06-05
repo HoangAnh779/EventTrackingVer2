@@ -16,8 +16,8 @@
 @inject IdentityRedirectManager RedirectManager
 
 <PageTitle>Register</PageTitle>
-<div class="register-container">
-    <div class="register-box">
+<div class="edit-container">
+    <div class="edit-box">
         <h1>Register</h1>
         <div class="row">
             <div class="col-md-12">
@@ -45,12 +45,11 @@
                         </div>
                         <div class="form-floating mb-3 col-6">
                             <InputSelect @bind-Value="Input.Sex" class="form-select" aria-required="true">
-                                <option value="">-- Choose gender--</option>
-                                <option value="Nam">Nam</option>
-                                <option value="Nu">Nữ</option>
+                                <option value="">-- Gender --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
                                 <option value="Other">Other</option>
                             </InputSelect>
-                            <label for="sex">Sex</label>
                             <ValidationMessage For="() => Input.Sex" class="text-danger" />
                         </div>
                     </div>
