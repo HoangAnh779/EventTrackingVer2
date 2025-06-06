@@ -20,15 +20,17 @@ builder.Services.AddScoped<IEmailSender<ApplicationUser>, IdentityNoOpEmailSende
 // Use for admin pages 
 builder.Services.AddAuthorization();
 
+builder.Services.AddDevExpressBlazor();
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
-builder.Services.AddScoped<WeatherForecastService>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+builder.Services.AddScoped<EventTracking.NwindDataService>();
 
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication(options =>

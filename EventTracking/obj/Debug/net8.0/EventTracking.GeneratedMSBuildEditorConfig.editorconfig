@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEFkbWluXEFjY291bnRNYW5hZ2VtZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Intern/EventTrackingVer2/EventTracking/Components/Account/Pages/Admin/AccountManagement1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEFkbWluXEFjY291bnRNYW5hZ2VtZW50MS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Intern/EventTrackingVer2/EventTracking/Components/Account/Pages/Admin/DeletePersonalUserData.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEFkbWluXERlbGV0ZVBlcnNvbmFsVXNlckRhdGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -186,6 +190,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Intern/EventTrackingVer2/EventTracking/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Intern/EventTrackingVer2/EventTracking/Components/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Intern/EventTrackingVer2/EventTracking/Components/Pages/Auth.razor]

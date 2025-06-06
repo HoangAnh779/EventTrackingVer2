@@ -47,6 +47,168 @@
           }
         }
       },
+      "DevExpress.Blazor/24.2.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Blazor.Resources": "[24.2.7]",
+          "DevExpress.Blazor.Themes": "[24.2.7]",
+          "DevExpress.Data": "[24.2.7]",
+          "DevExpress.Printing.Core": "[24.2.7]",
+          "DevExtreme.AspNet.Data": "4.0.0",
+          "System.Drawing.Common": "4.7.2",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Blazor.v24.2.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Blazor.v24.2.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net5.0/DevExpress.Blazor.props": {},
+          "buildTransitive/net5.0/DevExpress.Blazor.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/DevExpress.Blazor.props": {}
+        }
+      },
+      "DevExpress.Blazor.Resources/24.2.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[24.2.7]"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Blazor.Resources.v24.2.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Blazor.Resources.v24.2.dll": {}
+        },
+        "build": {
+          "buildTransitive/DevExpress.Blazor.Resources.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/DevExpress.Blazor.Resources.props": {}
+        }
+      },
+      "DevExpress.Blazor.Themes/24.2.7": {
+        "type": "package",
+        "build": {
+          "buildTransitive/DevExpress.Blazor.Themes.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/DevExpress.Blazor.Themes.props": {}
+        }
+      },
+      "DevExpress.Data/24.2.7": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.7.2"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Data.v24.2.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Data.v24.2.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DevExpress.Drawing/24.2.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[24.2.7]",
+          "System.Drawing.Common": "4.7.2"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Drawing.v24.2.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Drawing.v24.2.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DevExpress.Pdf.Core/24.2.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[24.2.7]",
+          "DevExpress.Drawing": "[24.2.7]",
+          "System.Drawing.Common": "4.7.2",
+          "System.Security.Cryptography.Pkcs": "8.0.1"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Pdf.v24.2.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Pdf.v24.2.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DevExpress.Pdf.Drawing/24.2.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[24.2.7]",
+          "DevExpress.Drawing": "[24.2.7]",
+          "DevExpress.Pdf.Core": "[24.2.7]",
+          "System.Drawing.Common": "4.7.2"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DevExpress.Printing.Core/24.2.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[24.2.7]",
+          "DevExpress.Drawing": "[24.2.7]",
+          "DevExpress.Pdf.Core": "[24.2.7]",
+          "DevExpress.Pdf.Drawing": "[24.2.7]",
+          "System.Drawing.Common": "4.7.2",
+          "System.Security.Cryptography.Pkcs": "8.0.1",
+          "System.ServiceModel.Http": "6.2.0"
+        },
+        "compile": {
+          "lib/net8.0/DevExpress.Printing.v24.2.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/DevExpress.Printing.v24.2.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DevExtreme.AspNet.Data/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/DevExtreme.AspNet.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/DevExtreme.AspNet.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -845,6 +1007,19 @@
           "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
+      "Microsoft.Extensions.ObjectPool/6.0.16": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Options/8.0.2": {
         "type": "package",
         "dependencies": {
@@ -1062,7 +1237,7 @@
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
@@ -1289,7 +1464,7 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -1396,6 +1571,22 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.Reactive/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net5.0/_._": {}
+        }
+      },
       "System.Reflection.Metadata/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -1471,7 +1662,7 @@
       "System.Security.AccessControl/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
         },
@@ -1512,6 +1703,28 @@
           }
         }
       },
+      "System.Security.Cryptography.Pkcs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Security.Cryptography.ProtectedData/6.0.0": {
         "type": "package",
         "compile": {
@@ -1532,6 +1745,26 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Security.Cryptography.Xml/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Security.Permissions/6.0.0": {
@@ -1574,6 +1807,119 @@
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "System.ServiceModel.Http/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ServiceModel.Primitives": "6.2.0"
+        },
+        "compile": {
+          "lib/net6.0/System.ServiceModel.Http.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Http.dll": {
+            "related": ".pdb"
+          }
+        },
+        "resource": {
+          "lib/net6.0/cs/System.ServiceModel.Http.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net6.0/de/System.ServiceModel.Http.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0/es/System.ServiceModel.Http.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0/fr/System.ServiceModel.Http.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0/it/System.ServiceModel.Http.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net6.0/ja/System.ServiceModel.Http.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0/ko/System.ServiceModel.Http.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0/pl/System.ServiceModel.Http.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net6.0/pt-BR/System.ServiceModel.Http.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0/ru/System.ServiceModel.Http.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0/tr/System.ServiceModel.Http.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0/zh-Hans/System.ServiceModel.Http.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net6.0/zh-Hant/System.ServiceModel.Http.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.ServiceModel.Primitives/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.ObjectPool": "6.0.16",
+          "System.Security.Cryptography.Xml": "6.0.1"
+        },
+        "compile": {
+          "ref/net6.0/System.ServiceModel.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Primitives.dll": {
+            "related": ".pdb"
+          }
+        },
+        "resource": {
+          "lib/net6.0/cs/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net6.0/de/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0/es/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0/fr/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0/it/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net6.0/ja/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0/ko/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0/pl/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net6.0/pt-BR/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0/ru/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0/tr/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0/zh-Hans/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net6.0/zh-Hant/System.ServiceModel.Primitives.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
@@ -1739,6 +2085,366 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "DevExpress.Blazor/24.2.7": {
+      "sha512": "/9FABfEPzQcnTV+2zZZn9yLyiI3gZjdgoAtYeYKOd+ir6BLmKQiysfKBhND67RJTuowFbW8mcUr8oOcpERcgQQ==",
+      "type": "package",
+      "path": "devexpress.blazor/24.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DevExpress.Blazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/DevExpress.Blazor.props",
+        "buildTransitive/DevExpress.Blazor.props",
+        "buildTransitive/net5.0/DevExpress.Blazor.props",
+        "buildTransitive/net5.0/DevExpress.Blazor.targets",
+        "devexpress.blazor.24.2.7.nupkg.sha512",
+        "devexpress.blazor.nuspec",
+        "lib/net8.0/DevExpress.Blazor.v24.2.dll",
+        "lib/net8.0/DevExpress.Blazor.v24.2.xml",
+        "staticwebassets/dx-blazor.svg",
+        "staticwebassets/modules/_commonjsHelpers-41cdd1e7.js",
+        "staticwebassets/modules/adaptivedropdowncomponents-2c25d011.js",
+        "staticwebassets/modules/after-render-utils.js",
+        "staticwebassets/modules/baseChart-ef6de437.js",
+        "staticwebassets/modules/branch-8aad40ac.js",
+        "staticwebassets/modules/browser-3fc721b7.js",
+        "staticwebassets/modules/capture-manager-6512e1fc.js",
+        "staticwebassets/modules/chart-bd5155ff.js",
+        "staticwebassets/modules/client-component-style-helper-195fa7c3.js",
+        "staticwebassets/modules/column-resize-878de769.js",
+        "staticwebassets/modules/columnchooser-5d3fa019.js",
+        "staticwebassets/modules/const-90026e45.js",
+        "staticwebassets/modules/constants-38572198.js",
+        "staticwebassets/modules/constants-7c047c0d.js",
+        "staticwebassets/modules/constants-da6cacac.js",
+        "staticwebassets/modules/constants-ed56e953.js",
+        "staticwebassets/modules/constants-f2324760.js",
+        "staticwebassets/modules/constants-f29f9b74.js",
+        "staticwebassets/modules/create-after-timeout-fn-executor-38b3d79d.js",
+        "staticwebassets/modules/css-classes-1103f305.js",
+        "staticwebassets/modules/custom-color-area-697257b4.js",
+        "staticwebassets/modules/custom-element-267f9a21.js",
+        "staticwebassets/modules/custom-events-helper-e7f279d3.js",
+        "staticwebassets/modules/data-qa-utils-8be7c726.js",
+        "staticwebassets/modules/define-custom-element-7c2e65e2.js",
+        "staticwebassets/modules/devextreme-widget-wrapper-6b32d7eb.js",
+        "staticwebassets/modules/devices-17b9ba08.js",
+        "staticwebassets/modules/disposable-d2c2d283.js",
+        "staticwebassets/modules/dom-4684d8d6.js",
+        "staticwebassets/modules/dom-utils-bf33c859.js",
+        "staticwebassets/modules/dragAndDropUnit-e111d952.js",
+        "staticwebassets/modules/draggable-0c5d4ff1.js",
+        "staticwebassets/modules/dragging-helper-b80ad36c.js",
+        "staticwebassets/modules/dropdown-f1ccc23d.js",
+        "staticwebassets/modules/dropdown-menu-keyboard-strategy-e6e5af6f.js",
+        "staticwebassets/modules/dropdowncomponents-233646c0.js",
+        "staticwebassets/modules/dropdowns-a2067a88.js",
+        "staticwebassets/modules/dx-accordion-84003ba1.js",
+        "staticwebassets/modules/dx-adaptive-container-2371ac28.js",
+        "staticwebassets/modules/dx-bar-gauge-628c5aa6.js",
+        "staticwebassets/modules/dx-blazor-all.js",
+        "staticwebassets/modules/dx-blazor-quill.js",
+        "staticwebassets/modules/dx-button-0485ee28.js",
+        "staticwebassets/modules/dx-calendar-1652f4af.js",
+        "staticwebassets/modules/dx-carousel-f631aebd.js",
+        "staticwebassets/modules/dx-check-internal-43bd9e24.js",
+        "staticwebassets/modules/dx-color-palette-9b8cdb8e.js",
+        "staticwebassets/modules/dx-combo-box-2ebe5f78.js",
+        "staticwebassets/modules/dx-combobox-0620b773.js",
+        "staticwebassets/modules/dx-context-menu-0712f68b.js",
+        "staticwebassets/modules/dx-css-runtime-b3e20aad.js",
+        "staticwebassets/modules/dx-date-edit-264b9a7c.js",
+        "staticwebassets/modules/dx-date-edit-base-9838c228.js",
+        "staticwebassets/modules/dx-date-range-picker-8936c4c9.js",
+        "staticwebassets/modules/dx-date-time-edit-7a1d983d.js",
+        "staticwebassets/modules/dx-drawer-f9904531.js",
+        "staticwebassets/modules/dx-dropdown-base3-2a276ffc.js",
+        "staticwebassets/modules/dx-dropdown-box-9abab201.js",
+        "staticwebassets/modules/dx-dropdown-list-box-dde7592a.js",
+        "staticwebassets/modules/dx-dropdown-owner-e1daf2a0.js",
+        "staticwebassets/modules/dx-form-layout-56dfa361.js",
+        "staticwebassets/modules/dx-grid-8ecf97ee.js",
+        "staticwebassets/modules/dx-grid-layout-a320e484.js",
+        "staticwebassets/modules/dx-grid-layout-element-base-389028ff.js",
+        "staticwebassets/modules/dx-group-control-5b0e4090.js",
+        "staticwebassets/modules/dx-html-editor-5ad246e1.js",
+        "staticwebassets/modules/dx-html-element-base-0c9486a6.js",
+        "staticwebassets/modules/dx-html-element-pointer-events-helper-6dda355e.js",
+        "staticwebassets/modules/dx-license-0dc50603.js",
+        "staticwebassets/modules/dx-list-box-c3f3c7bf.js",
+        "staticwebassets/modules/dx-list-box-events-727baefe.js",
+        "staticwebassets/modules/dx-listbox-aeee52d1.js",
+        "staticwebassets/modules/dx-loading-panel-a9dfe43c.js",
+        "staticwebassets/modules/dx-map-1abd4e7c.js",
+        "staticwebassets/modules/dx-memo-596c21be.js",
+        "staticwebassets/modules/dx-menu-6cbd09e3.js",
+        "staticwebassets/modules/dx-menu-item-cd5c20d5.js",
+        "staticwebassets/modules/dx-menu-preloader-c40bcae2.js",
+        "staticwebassets/modules/dx-pivot-table-40c443e5.js",
+        "staticwebassets/modules/dx-progress-bar-bf19f9d1.js",
+        "staticwebassets/modules/dx-range-selector-985c9bf2.js",
+        "staticwebassets/modules/dx-ribbon-705f41a7.js",
+        "staticwebassets/modules/dx-sankey-4e563bfb.js",
+        "staticwebassets/modules/dx-scroll-viewer-60d91017.js",
+        "staticwebassets/modules/dx-sparkline-fa8d495e.js",
+        "staticwebassets/modules/dx-splitter-81f851b2.js",
+        "staticwebassets/modules/dx-splitter-pane-2c810ba8.js",
+        "staticwebassets/modules/dx-splitter-separator-dbb55191.js",
+        "staticwebassets/modules/dx-stack-layout-a9cd2ada.js",
+        "staticwebassets/modules/dx-style-helper-2c51fb3e.js",
+        "staticwebassets/modules/dx-tab-item-a74f2c46.js",
+        "staticwebassets/modules/dx-tab-list-46116e62.js",
+        "staticwebassets/modules/dx-tabs-2d5547f3.js",
+        "staticwebassets/modules/dx-tag-box-33b94c15.js",
+        "staticwebassets/modules/dx-tag-names-3559f3f6.js",
+        "staticwebassets/modules/dx-tagbox-570e1d4d.js",
+        "staticwebassets/modules/dx-toast-deabf7e4.js",
+        "staticwebassets/modules/dx-toast-portal-6949a7b0.js",
+        "staticwebassets/modules/dx-tree-list-63756458.js",
+        "staticwebassets/modules/dx-tree-view-2518d858.js",
+        "staticwebassets/modules/dx-ui-element-f563b741.js",
+        "staticwebassets/modules/dx-ui-handlers-bridge-c2148178.js",
+        "staticwebassets/modules/dx-virtual-scroll-viewer-dae27cbc.js",
+        "staticwebassets/modules/dxbl-itemlistdropdown-472c340f.js",
+        "staticwebassets/modules/dxbl-window-73e00055.js",
+        "staticwebassets/modules/dynamic-stylesheet-component-569b697b.js",
+        "staticwebassets/modules/enumConverter-6047c3ff.js",
+        "staticwebassets/modules/eventRegister-fb9b0e47.js",
+        "staticwebassets/modules/eventhelper-8bcec49f.js",
+        "staticwebassets/modules/events-5ceb0642.js",
+        "staticwebassets/modules/events-70d90aad.js",
+        "staticwebassets/modules/events-a8fe5872.js",
+        "staticwebassets/modules/events-interseptor-a522582a.js",
+        "staticwebassets/modules/evt-a132c1ec.js",
+        "staticwebassets/modules/expandable-container-a8e2cc06.js",
+        "staticwebassets/modules/file-input-0016116d.js",
+        "staticwebassets/modules/flyout-40b85f47.js",
+        "staticwebassets/modules/flyoutcomponents-c6958acd.js",
+        "staticwebassets/modules/focus-utils-1fc0087c.js",
+        "staticwebassets/modules/focushelper-2eea96ca.js",
+        "staticwebassets/modules/focustrap-d11cfef9.js",
+        "staticwebassets/modules/grid-ef56d94c.js",
+        "staticwebassets/modules/grid-scroll-utils-aea9ac83.js",
+        "staticwebassets/modules/index-b5b22326.js",
+        "staticwebassets/modules/input-080cd073.js",
+        "staticwebassets/modules/key-a66127fc.js",
+        "staticwebassets/modules/keyboard-navigation-strategy-0cccb7d5.js",
+        "staticwebassets/modules/layouthelper-67dd777a.js",
+        "staticwebassets/modules/lit-element-462e7ad3.js",
+        "staticwebassets/modules/lit-element-base-8610706d.js",
+        "staticwebassets/modules/logicaltreehelper-67db40f1.js",
+        "staticwebassets/modules/masked-input-66cceef1.js",
+        "staticwebassets/modules/menu-keyboard-strategy-5b4c8131.js",
+        "staticwebassets/modules/modal-keyboard-strategy-ec7aca85.js",
+        "staticwebassets/modules/modalcomponents-9f0e5ffc.js",
+        "staticwebassets/modules/nameof-factory-64d95f5b.js",
+        "staticwebassets/modules/observables-589a5615.js",
+        "staticwebassets/modules/pager-000fd353.js",
+        "staticwebassets/modules/pie-chart-b2763065.js",
+        "staticwebassets/modules/point-e4ec110e.js",
+        "staticwebassets/modules/polar-chart-f1cfddaf.js",
+        "staticwebassets/modules/popup-826a996d.js",
+        "staticwebassets/modules/popupportal-e116a31b.js",
+        "staticwebassets/modules/portal-e7c7352c.js",
+        "staticwebassets/modules/positionlistener-bcff17ed.js",
+        "staticwebassets/modules/positiontracker-754c1e75.js",
+        "staticwebassets/modules/property-4ec0b52d.js",
+        "staticwebassets/modules/query-44b9267f.js",
+        "staticwebassets/modules/rafaction-bba7928b.js",
+        "staticwebassets/modules/ribbon-f1c4eb74.js",
+        "staticwebassets/modules/ribbon-item-7b925d66.js",
+        "staticwebassets/modules/ribbon-utils-8b4ac48a.js",
+        "staticwebassets/modules/roller-f9605222.js",
+        "staticwebassets/modules/scheduler-c6cb0344.js",
+        "staticwebassets/modules/screenhelper-e9ec6e3e.js",
+        "staticwebassets/modules/scroll-viewer-css-classes-cc34804c.js",
+        "staticwebassets/modules/settings-e5eb3375.js",
+        "staticwebassets/modules/single-slot-element-base-433be279.js",
+        "staticwebassets/modules/spinedit-fce16e2d.js",
+        "staticwebassets/modules/state-c294470d.js",
+        "staticwebassets/modules/string-2448bf95.js",
+        "staticwebassets/modules/svg-utils-63bfb9ee.js",
+        "staticwebassets/modules/tabbable-a2ae89a6.js",
+        "staticwebassets/modules/tabs-events-a1f15b18.js",
+        "staticwebassets/modules/text-editor-e6fb7cdd.js",
+        "staticwebassets/modules/thumb-31d768d7.js",
+        "staticwebassets/modules/toolbar-a64be582.js",
+        "staticwebassets/modules/toolbar-css-classes-795f4ae0.js",
+        "staticwebassets/modules/touch-b56439ef.js",
+        "staticwebassets/modules/transformhelper-ebad0156.js",
+        "staticwebassets/modules/tslib.es6-d65164b3.js",
+        "staticwebassets/modules/upload-base-39e2449e.js",
+        "staticwebassets/modules/upload-dd37e39c.js",
+        "staticwebassets/modules/utils-b5b2c8a9.js",
+        "staticwebassets/modules/webview-svg-loader-7cd1bef2.js",
+        "staticwebassets/modules/window-resize-helper-8b32f302.js"
+      ]
+    },
+    "DevExpress.Blazor.Resources/24.2.7": {
+      "sha512": "F9C6a0Qdlma2RL5Jf+QTBnvjzS4hWXelIkX/ErrIiwjRkaHnf+F8ES7VrwoBBYSn/fLft95Oc5HnWHram/yk7g==",
+      "type": "package",
+      "path": "devexpress.blazor.resources/24.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DevExpress.Blazor.Resources.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/DevExpress.Blazor.Resources.props",
+        "buildTransitive/DevExpress.Blazor.Resources.props",
+        "devexpress.blazor.resources.24.2.7.nupkg.sha512",
+        "devexpress.blazor.resources.nuspec",
+        "lib/net8.0/DevExpress.Blazor.Resources.v24.2.dll",
+        "staticwebassets/js/analytics-core/ace.js",
+        "staticwebassets/js/analytics-core/dx-analytics-core.min.js",
+        "staticwebassets/js/analytics-core/dx-querybuilder.min.js",
+        "staticwebassets/js/analytics-core/ext-language_tools.js",
+        "staticwebassets/js/analytics-core/jquery.min.js",
+        "staticwebassets/js/analytics-core/knockout-latest.js",
+        "staticwebassets/js/devextreme/dx.all.js",
+        "staticwebassets/js/import-scripts.js"
+      ]
+    },
+    "DevExpress.Blazor.Themes/24.2.7": {
+      "sha512": "aGuddj7OmvOb8w4IWEcjVWHlgKF7qtdr7WAEZ3JRV0vpG5bMFlSsaXwZs6x3X2LAt2IjT23WXDIbdWmKquf2dg==",
+      "type": "package",
+      "path": "devexpress.blazor.themes/24.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DevExpress.Blazor.Themes.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/DevExpress.Blazor.Themes.props",
+        "buildTransitive/DevExpress.Blazor.Themes.props",
+        "devexpress.blazor.themes.24.2.7.nupkg.sha512",
+        "devexpress.blazor.themes.nuspec",
+        "staticwebassets/blazing-berry.bs4.css",
+        "staticwebassets/blazing-berry.bs4.min.css",
+        "staticwebassets/blazing-berry.bs5.css",
+        "staticwebassets/blazing-berry.bs5.min.css",
+        "staticwebassets/blazing-dark.bs4.css",
+        "staticwebassets/blazing-dark.bs4.min.css",
+        "staticwebassets/blazing-dark.bs5.css",
+        "staticwebassets/blazing-dark.bs5.min.css",
+        "staticwebassets/bootstrap-external.bs4.css",
+        "staticwebassets/bootstrap-external.bs4.min.css",
+        "staticwebassets/bootstrap-external.bs5.css",
+        "staticwebassets/bootstrap-external.bs5.min.css",
+        "staticwebassets/fluent-dark.bs4.css",
+        "staticwebassets/fluent-dark.bs4.min.css",
+        "staticwebassets/fluent-dark.bs5.css",
+        "staticwebassets/fluent-dark.bs5.min.css",
+        "staticwebassets/fluent-dark.css",
+        "staticwebassets/fluent-dark.min.css",
+        "staticwebassets/fluent-light.bs4.css",
+        "staticwebassets/fluent-light.bs4.min.css",
+        "staticwebassets/fluent-light.bs5.css",
+        "staticwebassets/fluent-light.bs5.min.css",
+        "staticwebassets/fluent-light.css",
+        "staticwebassets/fluent-light.min.css",
+        "staticwebassets/office-white.bs4.css",
+        "staticwebassets/office-white.bs4.min.css",
+        "staticwebassets/office-white.bs5.css",
+        "staticwebassets/office-white.bs5.min.css",
+        "staticwebassets/purple.bs4.css",
+        "staticwebassets/purple.bs4.min.css",
+        "staticwebassets/purple.bs5.css",
+        "staticwebassets/purple.bs5.min.css"
+      ]
+    },
+    "DevExpress.Data/24.2.7": {
+      "sha512": "1kNih37KU9Y3i8grHg7L5309px1faw0K3fSLn+Q7f5mAKtC0mvI/gHPsBJjk+XDMJg9nfJB/RUwM6pynKkAGsA==",
+      "type": "package",
+      "path": "devexpress.data/24.2.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/DevExpress.Generator.dll",
+        "devexpress.data.24.2.7.nupkg.sha512",
+        "devexpress.data.nuspec",
+        "lib/net462/DevExpress.Data.v24.2.dll",
+        "lib/net462/DevExpress.Data.v24.2.xml",
+        "lib/net8.0/DevExpress.Data.v24.2.dll",
+        "lib/net8.0/DevExpress.Data.v24.2.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Drawing/24.2.7": {
+      "sha512": "LR7koHlVkX0kVTXFxaTbeJynqNB2nr10E8uOyecLfDOSzUmSAvkCbEpyqxPYOHIRX91BGWuz3eqTOgoX3v5eMA==",
+      "type": "package",
+      "path": "devexpress.drawing/24.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.drawing.24.2.7.nupkg.sha512",
+        "devexpress.drawing.nuspec",
+        "lib/net462/DevExpress.Drawing.v24.2.dll",
+        "lib/net462/DevExpress.Drawing.v24.2.xml",
+        "lib/net8.0/DevExpress.Drawing.v24.2.dll",
+        "lib/net8.0/DevExpress.Drawing.v24.2.xml"
+      ]
+    },
+    "DevExpress.Pdf.Core/24.2.7": {
+      "sha512": "2XRQ4CGuN/Jf2Oo8XuszODB+IE+ZXEjC2ITWHg2PfkPVFw5LmJubSU/eiXBG+35y/D9As69aGPxsY2HYJn86KA==",
+      "type": "package",
+      "path": "devexpress.pdf.core/24.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.pdf.core.24.2.7.nupkg.sha512",
+        "devexpress.pdf.core.nuspec",
+        "lib/net462/DevExpress.Pdf.v24.2.Core.dll",
+        "lib/net462/DevExpress.Pdf.v24.2.Core.xml",
+        "lib/net8.0/DevExpress.Pdf.v24.2.Core.dll",
+        "lib/net8.0/DevExpress.Pdf.v24.2.Core.xml"
+      ]
+    },
+    "DevExpress.Pdf.Drawing/24.2.7": {
+      "sha512": "PMd30Ja9yBufYS7OBGXJrSIsZuFVoP5fOO5XgvNSCN3IunGxu7mw7CRgBIo9+sdkVtQKvqYhtUsGiB+Jn9gEew==",
+      "type": "package",
+      "path": "devexpress.pdf.drawing/24.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.pdf.drawing.24.2.7.nupkg.sha512",
+        "devexpress.pdf.drawing.nuspec",
+        "lib/net462/DevExpress.Pdf.v24.2.Drawing.dll",
+        "lib/net462/DevExpress.Pdf.v24.2.Drawing.xml",
+        "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.dll",
+        "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.xml"
+      ]
+    },
+    "DevExpress.Printing.Core/24.2.7": {
+      "sha512": "Tt40Gc5/H/Ljbfce2xhl/6B7cJU2TKtNc9pzG+aUFz1MF/R6WljHgThyOFxoUaQkW6REhFFaM4jQDBrZs6PjEQ==",
+      "type": "package",
+      "path": "devexpress.printing.core/24.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.printing.core.24.2.7.nupkg.sha512",
+        "devexpress.printing.core.nuspec",
+        "lib/net462/DevExpress.Printing.v24.2.Core.dll",
+        "lib/net462/DevExpress.Printing.v24.2.Core.xml",
+        "lib/net8.0/DevExpress.Printing.v24.2.Core.dll",
+        "lib/net8.0/DevExpress.Printing.v24.2.Core.xml"
+      ]
+    },
+    "DevExtreme.AspNet.Data/4.0.0": {
+      "sha512": "BfADnQ9HD3L1/du53CrDbqfb+3zTBc+yGYG1sblYKL33cf2BEjljUEAopI6K4i35fcR4pI6dUbsQL4qOMrRqZg==",
+      "type": "package",
+      "path": "devextreme.aspnet.data/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devextreme.aspnet.data.4.0.0.nupkg.sha512",
+        "devextreme.aspnet.data.nuspec",
+        "lib/net461/DevExtreme.AspNet.Data.dll",
+        "lib/net461/DevExtreme.AspNet.Data.xml",
+        "lib/net6.0/DevExtreme.AspNet.Data.dll",
+        "lib/net6.0/DevExtreme.AspNet.Data.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2968,6 +3674,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.ObjectPool/6.0.16": {
+      "sha512": "OVX5tlKg6LY+XKqlUn7i9KY+6Liut0iewWff2DNr7129i/NJ8rpUzbmxavPydZgcLREEWHklXZiPKCS895tNIQ==",
+      "type": "package",
+      "path": "microsoft.extensions.objectpool/6.0.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.ObjectPool.dll",
+        "lib/net461/Microsoft.Extensions.ObjectPool.xml",
+        "lib/net6.0/Microsoft.Extensions.ObjectPool.dll",
+        "lib/net6.0/Microsoft.Extensions.ObjectPool.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml",
+        "microsoft.extensions.objectpool.6.0.16.nupkg.sha512",
+        "microsoft.extensions.objectpool.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Options/8.0.2": {
       "sha512": "dWGKvhFybsaZpGmzkGCbNNwBD1rVlWzrZKANLW/CcbFJpCEceMCGzT7zZwHOGBCbwM0SzBuceMj5HN1LKV1QqA==",
       "type": "package",
@@ -3777,6 +4502,35 @@
         "version.txt"
       ]
     },
+    "System.Reactive/5.0.0": {
+      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+      "type": "package",
+      "path": "system.reactive/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net5.0/_._",
+        "build/netcoreapp3.1/System.Reactive.dll",
+        "build/netcoreapp3.1/System.Reactive.targets",
+        "build/netcoreapp3.1/System.Reactive.xml",
+        "buildTransitive/net5.0/_._",
+        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net5.0/System.Reactive.dll",
+        "lib/net5.0/System.Reactive.xml",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "system.reactive.5.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
     "System.Reflection.Metadata/6.0.1": {
       "sha512": "III/lNMSn0ZRBuM9m5Cgbiho5j81u0FAEagFX5ta2DKbljZ3T0IpD8j+BIiHQPeKqJppWS9bGEp6JnKnWKze0g==",
       "type": "package",
@@ -4064,6 +4818,43 @@
         "version.txt"
       ]
     },
+    "System.Security.Cryptography.Pkcs/8.0.1": {
+      "sha512": "CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
+      "type": "package",
+      "path": "system.security.cryptography.pkcs/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.Pkcs.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Pkcs.targets",
+        "lib/net462/System.Security.Cryptography.Pkcs.dll",
+        "lib/net462/System.Security.Cryptography.Pkcs.xml",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/net7.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net7.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net8.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
+        "lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.xml",
+        "system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
+        "system.security.cryptography.pkcs.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Security.Cryptography.ProtectedData/6.0.0": {
       "sha512": "rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ==",
       "type": "package",
@@ -4096,6 +4887,31 @@
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Cryptography.Xml/6.0.1": {
+      "sha512": "5e5bI28T0x73AwTsbuFP4qSRzthmU2C0Gqgg3AZ3KTxmSyA+Uhk31puA3srdaeWaacVnHhLdJywCzqOiEpbO/w==",
+      "type": "package",
+      "path": "system.security.cryptography.xml/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Xml.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Security.Cryptography.Xml.dll",
+        "lib/net461/System.Security.Cryptography.Xml.xml",
+        "lib/net6.0/System.Security.Cryptography.Xml.dll",
+        "lib/net6.0/System.Security.Cryptography.Xml.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Xml.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Xml.xml",
+        "system.security.cryptography.xml.6.0.1.nupkg.sha512",
+        "system.security.cryptography.xml.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -4181,6 +4997,65 @@
         "system.security.principal.windows.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.ServiceModel.Http/6.2.0": {
+      "sha512": "lMk8MEw1OCvyyKY4HMg4ro1eYtWY7azIoDc2FBEGP8uOTJouWn3DemOQvM/GUpgrFbkpjuHPbEG5hgUbNtpiYA==",
+      "type": "package",
+      "path": "system.servicemodel.http/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/System.ServiceModel.Http.dll",
+        "lib/net6.0/System.ServiceModel.Http.pdb",
+        "lib/net6.0/cs/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/de/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/es/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/fr/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/it/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/ja/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/ko/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/pl/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/pt-BR/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/ru/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/tr/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/zh-Hans/System.ServiceModel.Http.resources.dll",
+        "lib/net6.0/zh-Hant/System.ServiceModel.Http.resources.dll",
+        "system.servicemodel.http.6.2.0.nupkg.sha512",
+        "system.servicemodel.http.nuspec"
+      ]
+    },
+    "System.ServiceModel.Primitives/6.2.0": {
+      "sha512": "ro+c4JKNuX6dDpTWh9ZICYr4pIe7uJToauPPgZt2qqFPjVB78ZDUz3rPCZX89dA+IoRZ+9T1ngLBKsgkTmx7UA==",
+      "type": "package",
+      "path": "system.servicemodel.primitives/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/System.ServiceModel.Primitives.dll",
+        "lib/net6.0/System.ServiceModel.Primitives.pdb",
+        "lib/net6.0/cs/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/de/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/es/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/fr/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/it/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/ja/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/ko/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/pl/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/pt-BR/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/ru/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/tr/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/zh-Hans/System.ServiceModel.Primitives.resources.dll",
+        "lib/net6.0/zh-Hant/System.ServiceModel.Primitives.resources.dll",
+        "ref/net6.0/System.ServiceModel.Primitives.dll",
+        "system.servicemodel.primitives.6.2.0.nupkg.sha512",
+        "system.servicemodel.primitives.nuspec"
       ]
     },
     "System.Text.Encoding/4.3.0": {
@@ -4429,6 +5304,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "DevExpress.Blazor >= 24.2.7",
       "Microsoft.AspNetCore.Components.Web >= 8.0.16",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.16",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.16",
@@ -4492,6 +5368,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "DevExpress.Blazor": {
+            "target": "Package",
+            "version": "[24.2.7, )"
+          },
           "Microsoft.AspNetCore.Components.Web": {
             "target": "Package",
             "version": "[8.0.16, )"

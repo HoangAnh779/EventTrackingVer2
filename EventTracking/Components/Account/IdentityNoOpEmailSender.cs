@@ -9,7 +9,7 @@ namespace EventTracking.Components.Account
 {
     internal sealed class IdentityNoOpEmailSender : IEmailSender<ApplicationUser>
     {
-        // Gán trực tiếp email và mật khẩu ứng dụng ở đây
+        
         private readonly string fromEmail = "event.tracking2025@gmail.com";
         private readonly string appPassword = "nmqu kwtc ynor vfvy";
 
@@ -36,7 +36,6 @@ namespace EventTracking.Components.Account
             }
             catch (Exception ex)
             {
-                // Ghi log hoặc ném lỗi tùy theo nhu cầu
                 throw new InvalidOperationException("Gửi email thất bại", ex);
             }
         }
@@ -44,11 +43,41 @@ namespace EventTracking.Components.Account
         public Task SendEmailAsync(string email, string subject, string htmlMessage) =>
             SendAsync(email, subject, htmlMessage);
 
-        public Task SendConfirmationLinkAsync(ApplicationUser user, string email, string confirmationLink) =>
-            SendEmailAsync(email, "Xác nhận email", $"Vui lòng <a href='{confirmationLink}'>bấm vào đây để xác nhận</a>.");
+        public Task SendConfirmationLinkAsync(ApplicationUser user, string email, string confirmationLink)
+        {
+            string subject = "Xác nhận địa chỉ email của bạn";
 
-        public Task SendPasswordResetLinkAsync(ApplicationUser user, string email, string resetLink) =>
-            SendEmailAsync(email, "Đặt lại mật khẩu", $"Vui lòng <a href='{resetLink}'>bấm vào đây để đặt lại mật khẩu</a>.");
+            string body = $@"
+            <div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background-color: #ffffff; border: 1px solid #e0e0e0;'>
+                <h2 style='color: #333;'>Chào {user.UserName ?? "bạn"},</h2>
+                <p style='font-size: 16px; color: #555;'>Cảm ơn bạn đã đăng ký. Để hoàn tất quá trình, vui lòng xác nhận địa chỉ email của bạn bằng cách nhấn vào nút bên dưới:</p>
+                <div style='text-align: center; margin: 30px 0;'>
+                    <a href='{confirmationLink}' style='background-color: #1a73e8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 16px;'>Xác nhận email</a>
+                </div>
+                <p style='font-size: 14px; color: #888;'>Nếu bạn không tạo tài khoản, bạn có thể bỏ qua email này.</p>
+                <p style='font-size: 14px; color: #888;'>Trân trọng,<br/>Đội ngũ hỗ trợ</p>
+            </div>";
+
+            return SendEmailAsync(email, subject, body);
+        }
+
+        public Task SendPasswordResetLinkAsync(ApplicationUser user, string email, string resetLink)
+        {
+            string subject = "Yêu cầu đặt lại mật khẩu";
+
+            string body = $@"
+        <div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; background-color: #ffffff; border: 1px solid #e0e0e0;'>
+            <h2 style='color: #333;'>Chào {user.UserName ?? "bạn"},</h2>
+            <p style='font-size: 16px; color: #555;'>Chúng tôi nhận được yêu cầu đặt lại mật khẩu cho tài khoản của bạn. Để tiếp tục, vui lòng nhấn vào nút bên dưới:</p>
+            <div style='text-align: center; margin: 30px 0;'>
+                <a href='{resetLink}' style='background-color: #d93025; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 16px;'>Đặt lại mật khẩu</a>
+            </div>
+            <p style='font-size: 14px; color: #888;'>Nếu bạn không yêu cầu điều này, vui lòng bỏ qua email này. Mật khẩu của bạn sẽ không bị thay đổi.</p>
+            <p style='font-size: 14px; color: #888;'>Trân trọng,<br/>Đội ngũ hỗ trợ</p>
+        </div>";
+
+            return SendEmailAsync(email, subject, body);
+        }
 
         public Task SendPasswordResetCodeAsync(ApplicationUser user, string email, string resetCode) =>
             SendEmailAsync(email, "Mã đặt lại mật khẩu", $"Mã đặt lại mật khẩu của bạn là: <strong>{resetCode}</strong>");
